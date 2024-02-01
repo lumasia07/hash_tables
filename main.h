@@ -3,9 +3,10 @@
 
 #define CAPACITY 50000
 
+#include <stdio.h>
 
 /* Hash function */
-unsigned long has_function(char* str);
+unsigned long hash_function(char* str);
 
 
 #endif /* MAIN_H */

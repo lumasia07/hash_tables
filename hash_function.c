@@ -9,5 +9,5 @@ unsigned long hash_function(char* str)
 	for (j = 0; str[j]; j++)
 		i += str[j]; /* adds ASCII value to hash value */
 
-	return i % CAPACITY; /* Calculates remainder & returns hash value */
+	return (i % CAPACITY); /* Calculates remainder & returns hash value */
 }
