@@ -4,9 +4,11 @@
 #define CAPACITY 50000
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-/* Hash function */
 unsigned long hash_function(char* str);
+ht_item* create_item(char* key, char* value);
 
 /* Structure to define Hashtable Item */
 typedef struct ht_item
