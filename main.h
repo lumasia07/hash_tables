@@ -8,8 +8,6 @@
 #include <string.h>
 
 unsigned long hash_function(char* str);
-ht_item* create_item(char* key, char* value);
-hash_table* create_table(int size);
 
 /* Structure to define Hashtable Item */
 typedef struct ht_item
@@ -27,5 +25,12 @@ typedef struct hash_table
 	int count; /* curent count of items inserted in table */
 } hash_table;
 
+
+ht_item* create_item(char* key, char* value);
+hash_table* create_table(int size);
+
+/* Free functions */
+void free_item(ht_item* item);
+void free_table(hash_table* table);
 
 #endif /* MAIN_H */
