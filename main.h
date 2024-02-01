@@ -9,6 +9,7 @@
 
 unsigned long hash_function(char* str);
 ht_item* create_item(char* key, char* value);
+hash_table* create_table(int size);
 
 /* Structure to define Hashtable Item */
 typedef struct ht_item
