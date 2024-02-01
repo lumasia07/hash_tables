@@ -13,8 +13,8 @@ typedef struct hash_table
 {
 	/* Array of pointers to items */
 	ht_item** items;
-	int size;
-	int count;
+	int size; /* size of slots */
+	int count; /* curent count of items inserted in table */
 } hash_table;
 
 
