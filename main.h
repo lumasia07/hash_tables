@@ -28,6 +28,7 @@ typedef struct hash_table
 
 ht_item* create_item(char* key, char* value);
 hash_table* create_table(int size);
+void print_table(hash_table* table);
 
 /* Free functions */
 void free_item(ht_item* item);
